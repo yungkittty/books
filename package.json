@@ -1,0 +1,13 @@
+{
+  "name": "books",
+  "author": "yungkittty <quentin.woivre@gmail.com>",
+  "version": "1.0.0",
+  "private": "true",
+  "workspaces": [
+    "./packages/books-api"
+  ],
+  "scripts": {},
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
+}
