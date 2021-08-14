@@ -1,0 +1,12 @@
+version: "1.0.0"
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_USER=books-user
+      - POSTGRES_PASSWORD=books-password
+      - POSTGRES_DB=books-db
+    ports: "5432:5432"
+    volumes:
+      - "./database/init-database.sql:/docker-entrypoint-initdb.d/init-database.sql"

@@ -2,5 +2,7 @@
   "name": "books-api",
   "author": "yungkittty <quentin.woivre@gmail.com>",
   "version": "1.0.0",
-  "scripts": {}
+  "scripts": {
+    "start": "sh ./scripts/start.sh"
+  }
 }

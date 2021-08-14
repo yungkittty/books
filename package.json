@@ -4,10 +4,16 @@
   "version": "1.0.0",
   "private": "true",
   "workspaces": [
-    "./packages/books-api"
+    "./packages/*"
   ],
-  "scripts": {},
+  "scripts": {
+    "pm2": "injectArgs() { pm2 \"$@\" pm2.config.js; }; injectArgs",
+    "start": "yarn pm2 start",
+    "stop": "yarn pm2 stop",
+    "logs": "yarn pm2 logs"
+  },
   "devDependencies": {
+    "pm2": "^5.1.0",
     "prettier": "^2.3.2"
   }
 }
