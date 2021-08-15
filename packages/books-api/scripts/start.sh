@@ -6,6 +6,9 @@ handle_exit () {
 
 trap handle_exit EXIT;
 
-docker compose up --force-recreate --quiet-pull;
+docker compose up \
+  --force-recreate \
+  --renew-anon-volumes \
+  --quiet-pull;
 
 node ./src/index.js;

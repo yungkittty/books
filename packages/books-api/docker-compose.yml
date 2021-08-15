@@ -4,9 +4,9 @@ services:
     image: postgres
     restart: always
     environment:
-      - POSTGRES_USER=books-user
-      - POSTGRES_PASSWORD=books-password
-      - POSTGRES_DB=books-db
+      - POSTGRES_USER=books
+      - POSTGRES_PASSWORD=books
+      - POSTGRES_DB=books
     ports:
       - "5432:5432"
     volumes:
